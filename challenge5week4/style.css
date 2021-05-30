@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#right_leg {
+  animation: walk 1.5s infinite ease-in-out;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+
+#left_leg {
+  animation: walk2 1.5s infinite;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+
+#man {
+  animation: body 3s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#right_hand {
+  animation: hands 2s infinite linear;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+#left_hand {
+  position: absolute;
+  z-index: 50;
+  animation: hands2 1.6s infinite linear;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+
+@keyframes walk {
+  0% {
+    transform: rotateZ(-20deg);
+  }
+  50% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    transform: rotateZ(-20deg);
+  }
+}
+
+@keyframes walk2 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(-30deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes body {
+  0% {
+    transform: rotateX(20deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    transform: rotateX(20deg);
+  }
+}
+@keyframes hands {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes hands2 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(25deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}

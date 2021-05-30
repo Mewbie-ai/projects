@@ -1,0 +1,142 @@
+.grid {
+  padding: 30px;
+  text-align: center;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.nav-link {
+  text-decoration: none;
+}
+.nav-item {
+  text-decoration: none;
+}
+.glass {
+  display: block;
+  position: fixed;
+  box-sizing: border-box;
+  bottom: 0;
+}
+
+/* ---- .grid-item ---- */
+#theme {
+  position: relative;
+  animation: fadeinout 3.6s linear forwards, move 3.6s ease-in-out;
+  opacity: 0;
+  top: 50px;
+}
+.grid-item {
+  position: relative;
+  animation: fadeinout 3.6s ease-in forwards, move 3.6s ease-in-out;
+  animation-delay: calc(var(--animation-order) * 150ms);
+  opacity: 0;
+  width: 220px;
+  height: 696px;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 8px;
+  animation-fill-mode: both;
+  top: 50px;
+}
+.grid-item img {
+  display: flex;
+  width: 220px;
+  height: 340px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+/* clear fix */
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* Carousel */
+
+.carousel-item {
+  transition: none;
+}
+
+@keyframes move {
+  15%,
+  75% {
+    top: 0px;
+  }
+
+  90%,
+  99% {
+    top: -50px;
+  }
+}
+@keyframes fadeinout {
+  15%,
+  75% {
+    opacity: 1;
+  }
+  90%,
+  100% {
+    opacity: 0;
+  }
+}
+.carousel-indicators {
+  top: 270px;
+  bottom: unset;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 6px;
+  background-color: rgba(173, 173, 173, 0.8);
+}
+.btn {
+  border-radius: 20px;
+}
+.btn:hover {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1 {
+  font-size: 60px;
+}
+.tpad0 {
+  padding-top: 0px;
+}
+.tpad1 {
+  padding-top: 150px;
+}
+.tpad2 {
+  padding-top: 220px;
+}
+.tpad3 {
+  padding-top: 370px;
+}
+/* .carousel-item .grid-item:nth-child(1) {
+  animation-duration: 1.9s;
+}
+.carousel-item .grid-item:nth-child(2) {
+  animation-duration: 2s;
+}
+.carousel-item .grid-item:nth-child(3) {
+  animation-duration: 2.1s;
+}
+.carousel-item .grid-item:nth-child(4) {
+  animation-duration: 2.2s;
+}
+.carousel-item .grid-item:nth-child(5) {
+  animation-duration: 2.3s;
+}
+.carousel-item .grid-item:nth-child(6) {
+  animation-duration: 2.4s;
+}
+.carousel-item .grid-item:nth-child(7) {
+  animation-duration: 2.5s;
+} */

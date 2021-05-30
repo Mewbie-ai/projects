@@ -1,0 +1,39 @@
+body {
+  background-image: url("MVDMTdx.gif");
+  background-size: cover;
+
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.game--container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 306px;
+  margin: 100px auto;
+
+  /* text-align: center; */
+}
+
+.cell {
+  font-family: cursive;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #333333;
+  cursor: pointer;
+  line-height: 100px;
+  font-size: 60px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  color: aquamarine;
+  margin-top: 70px;
+  border-radius: 50px;
+  background-color: #1a1144;
+}

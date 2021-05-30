@@ -1,0 +1,28 @@
+.graydien {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(133, 133, 133, 1) 35%, rgba(0, 0, 0, 1) 100%);
+}
+body {
+  background: rgb(120, 109, 184);
+  background: linear-gradient(90deg, rgba(120, 109, 184, 1) 0%, rgba(94, 98, 182, 1) 35%, rgba(113, 129, 185, 1) 100%);
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.caption {
+  position: absolute;
+  top: 45%;
+}
+
+footer {
+  display: block;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  padding: 15px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
