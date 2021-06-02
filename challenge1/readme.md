@@ -6,3 +6,4 @@ Challenge: create a website similiar to <a href="embed.com"> embed.com</a>
 
 - Bootstrap 5.0beta3
 - Bootstrap Icons 1.4.1
+- GSAP animation

@@ -1,3 +1,1 @@
-# myShop
-
-    Creating an online shop with databases
+# svg animation with CSS
