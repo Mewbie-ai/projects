@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- !important -->
+  <meta charset="UTF-8">
+  <title>Library</title>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <!-- mobile viewport -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <style>
+    label{
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="p-3">Library Project</h1>
+    <form class="row g-3">
+      
+      <div class="col-7">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title">
+      </div>
+      <div class="col-5">
+        <label for="pages" class="form-label">Pages</label>
+        <input type="text" class="form-control" id="pages">
+      </div>
+      <div class="col-7">
+        <label for="author" class="form-label">Author</label>
+        <input type="text" class="form-control" id="author">
+      </div>
+      <div class="col-5">
+        <label for="completed" class="form-label">Status</label>
+        <select id="completed" class="form-select">
+          <option selected>Finished</option>
+          <option>Not yet</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Add Book</button>
+      </div>
+    </form>
+    <div style="padding-top: 80px; font-size: 1.2em;">
+      <table class="table lh-lg">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Pages</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody id="book-table-body"></tbody>
+      </table>
+    </div>
+  </div> 
+
+  <script src="script.js"></script>
+</body>
+</html>
